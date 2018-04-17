@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Teste QR Code
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ 
+
+  <button ion-button full icon-left (click)="scanear()" color="secondary"><ion-icon name="qr-scanner"></ion-icon>Scanear</button>
+  
+ 
+  <ion-card *ngIf="scannedCode">
+    <ion-card-content>
+      Resultado do Scan: {{ scannedCode }}
+    </ion-card-content>
+  </ion-card>
+</ion-content>
